@@ -4,12 +4,13 @@
   "title": "ISS AQ Student Survey",
   "description": "A comprehensive survey measuring behavioral, motivational, emotional, and social factors.",
   "likertScale": [
-    "Strongly Disagree",
-    "Disagree",
-    "Neutral",
-    "Agree",
-    "Strongly Agree"
-  ],
+  "Strongly Disagree",
+  "Disagree",
+  "Somewhat Disagree",
+  "Somewhat Agree",
+  "Agree",
+  "Strongly Agree"
+],
   "constructs": [
     {
       "id": "organization",
@@ -45,3 +46,4 @@
     }
   ]
 }
+
