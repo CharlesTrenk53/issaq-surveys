@@ -1,0 +1,47 @@
+{
+  "id": "issaq-standard",
+  "version": 1,
+  "title": "ISS AQ Student Survey",
+  "description": "A comprehensive survey measuring behavioral, motivational, emotional, and social factors.",
+  "likertScale": [
+    "Strongly Disagree",
+    "Disagree",
+    "Neutral",
+    "Agree",
+    "Strongly Agree"
+  ],
+  "constructs": [
+    {
+      "id": "organization",
+      "title": "Organization",
+      "questions": [
+        {
+          "id": "org_q1",
+          "text": "I keep track of assignment due dates.",
+          "factor": "organization"
+        },
+        {
+          "id": "org_q2",
+          "text": "I plan my time effectively.",
+          "factor": "organization"
+        }
+      ]
+    },
+    {
+      "id": "self_efficacy",
+      "title": "Self-Efficacy",
+      "questions": [
+        {
+          "id": "se_q1",
+          "text": "I am confident I can learn the material in my courses.",
+          "factor": "self_efficacy"
+        },
+        {
+          "id": "se_q2",
+          "text": "I believe I can succeed academically.",
+          "factor": "self_efficacy"
+        }
+      ]
+    }
+  ]
+}
