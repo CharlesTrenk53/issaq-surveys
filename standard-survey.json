@@ -1,30 +1,476 @@
 {
-  "id": "issaq-standard",
+  "id": "standard",
   "version": 1,
-  "title": "ISS AQ Student Survey",
-  "description": "A comprehensive survey measuring behavioral, motivational, emotional, and social factors.",
+  "title": "ISSAQ Student Survey",
+  "description": "A brief survey that helps you understand your strengths and challenges.",
   "likertScale": [
-  "Strongly Disagree",
-  "Disagree",
-  "Somewhat Disagree",
-  "Somewhat Agree",
-  "Agree",
-  "Strongly Agree"
-],
+    "Strongly Disagree",
+    "Disagree",
+    "Somewhat Disagree",
+    "Somewhat Agree",
+    "Agree",
+    "Strongly Agree"
+  ],
   "constructs": [
+    {
+      "id": "basic_needs",
+      "title": "Basic Needs",
+      "questions": [
+        {
+          "id": "Basic.1",
+          "text": "In the last 12 months, were you ever hungry but didn’t eat because there wasn’t enough food?"
+        },
+        {
+          "id": "Basic.2",
+          "text": "In the last 12 months, have you needed medical care (such as a doctors visit, hospital visit, or medication) but were not able to get it because you couldn’t afford it?"
+        },
+        {
+          "id": "Basic.3",
+          "text": "In the last 12 months, have you needed mental health resources but were not able to access them?"
+        },
+        {
+          "id": "Basic.4",
+          "text": "Do you have a reliable means of transportation to get to campus?"
+        },
+        {
+          "id": "Basic.5",
+          "text": "If they were available to you at no cost, would you be interested in any of the resources below? (Check all that apply)"
+        },
+        {
+          "id": "Basic.6",
+          "text": "Do you plan to work (either on-campus or off-campus) during your first year?"
+        },
+        {
+          "id": "Basic.7",
+          "text": "Do you have a commute to get to campus?"
+        },
+        {
+          "id": "Basic.8",
+          "text": "Do you have a mobile device with WIFI capability?"
+        },
+        {
+          "id": "Basic.9",
+          "text": "Do you have a laptop or desktop computer that you can use for classwork?"
+        }
+      ]
+    },
+    {
+      "id": "career",
+      "title": "Career",
+      "questions": [
+        {
+          "id": "Career.1",
+          "text": "I know how to identify possible career options based on my strengths, values and interests"
+        },
+        {
+          "id": "Career.2",
+          "text": "I know how to choose between occupations"
+        },
+        {
+          "id": "Career.3",
+          "text": "I know how what kind of classes to take in order to prepare for my career"
+        },
+        {
+          "id": "Career.4",
+          "text": "I know how my classes prepare me for my career"
+        },
+        {
+          "id": "Career.5",
+          "text": "I know how my major and career goals are related"
+        },
+        {
+          "id": "Career.6",
+          "text": "I know how to gain practical experience in my field of study"
+        },
+        {
+          "id": "Career.7",
+          "text": "I know how to gain experience to prepare me for my career"
+        }
+      ]
+    },
+    {
+      "id": "calmness",
+      "title": "Calmness",
+      "questions": [
+        {
+          "id": "Calm.1",
+          "text": "I often worry about things"
+        },
+        {
+          "id": "Calm.2",
+          "text": "I panic easily"
+        },
+        {
+          "id": "Calm.3",
+          "text": "I get stressed out easily"
+        },
+        {
+          "id": "Calm.4",
+          "text": "I sometimes get overwhelmed by anxiety"
+        },
+        {
+          "id": "Calm.5",
+          "text": "I get upset easily"
+        },
+        {
+          "id": "Calm.6",
+          "text": "I am nervous most of the time"
+        },
+        {
+          "id": "Calm.7",
+          "text": "I am always worried about something"
+        }
+      ]
+    },
+    {
+      "id": "coping_strategies",
+      "title": "Coping Strategies",
+      "questions": [
+        {
+          "id": "Coping.1",
+          "text": "I ask a relative or friend for advice"
+        },
+        {
+          "id": "Coping.2",
+          "text": "I blame myself for what happened"
+        },
+        {
+          "id": "Coping.3",
+          "text": "I talk to someone to find out more about the situation"
+        },
+        {
+          "id": "Coping.4",
+          "text": "I get support from others"
+        },
+        {
+          "id": "Coping.5",
+          "text": "I come up with a couple of different solutions to the problem"
+        },
+        {
+          "id": "Coping.6",
+          "text": "I try to keep my feelings to myself"
+        },
+        {
+          "id": "Coping.7",
+          "text": "I wish the situation would go away"
+        },
+        {
+          "id": "Coping.8",
+          "text": "I get advice from other people"
+        },
+        {
+          "id": "Coping.9",
+          "text": "I try to understand the problem better"
+        }
+      ]
+    },
+    {
+      "id": "effort_focus",
+      "title": "Effort Focus",
+      "questions": [
+        {
+          "id": "Effort1",
+          "text": "People get what they want if they work hard for it"
+        },
+        {
+          "id": "Effort2",
+          "text": "I believe that \"practice makes perfect\""
+        },
+        {
+          "id": "Effort3",
+          "text": "Practicing something is just as important as being good at it"
+        },
+        {
+          "id": "Effort4",
+          "text": "You get smarter the harder you work in school"
+        },
+        {
+          "id": "Effort5",
+          "text": "Working hard is more important than being smart"
+        },
+        {
+          "id": "Effort6",
+          "text": "Your intelligence is set at birth and doesn’t change much over your lifetime"
+        },
+        {
+          "id": "Effort7",
+          "text": "Smart people do not need to try hard to do well in school"
+        }
+      ]
+    },
+    {
+      "id": "engagement",
+      "title": "Engagement",
+      "questions": [
+        {
+          "id": "Engage1",
+          "text": "I take notes in class"
+        },
+        {
+          "id": "Engage2",
+          "text": "I pay attention in class"
+        },
+        {
+          "id": "Engage3",
+          "text": "I always get my homework done"
+        },
+        {
+          "id": "Engage4",
+          "text": "I show up to class on time"
+        },
+        {
+          "id": "Engage5",
+          "text": "I read things that are assigned to me"
+        },
+        {
+          "id": "Engage6",
+          "text": "I get my assignments done on time"
+        },
+        {
+          "id": "Engage7",
+          "text": "I ask questions in class"
+        },
+        {
+          "id": "Engage8",
+          "text": "I participate in class discussions"
+        }
+      ]
+    },
+    {
+      "id": "financial_worry",
+      "title": "Financial Worry",
+      "questions": [
+        {
+          "id": "FinWorry.1",
+          "text": "I worry about being able to pay for college"
+        },
+        {
+          "id": "FinWorry.2",
+          "text": "I worry about not having enough money for the basic necessities of life (for example clothing, food, rent.)"
+        },
+        {
+          "id": "FinWorry.3",
+          "text": "I worry about running out of money"
+        },
+        {
+          "id": "FinWorry.4",
+          "text": "I worry about transportation to get to and from school"
+        }
+      ]
+    },
+    {
+      "id": "goal_commitment",
+      "title": "Goal Commitment",
+      "questions": [
+        {
+          "id": "GoalCommit1",
+          "text": "Getting a college degree is important to me"
+        },
+        {
+          "id": "GoalCommit2",
+          "text": "The benefits of a college degree outweigh the costs"
+        },
+        {
+          "id": "GoalCommit3",
+          "text": "I’m proud of myself when I do well in school"
+        },
+        {
+          "id": "GoalCommit4",
+          "text": "I can be successful without a college degree"
+        },
+        {
+          "id": "GoalCommit5",
+          "text": "I am determined to get a college degree"
+        },
+        {
+          "id": "GoalCommit6",
+          "text": "My family supports me going to college"
+        },
+        {
+          "id": "GoalCommit7",
+          "text": "Getting a college degree is a major accomplishment"
+        },
+        {
+          "id": "GoalCommit8",
+          "text": "My friends support me going to college"
+        },
+        {
+          "id": "GoalCommit9",
+          "text": "I’ll do whatever it takes to be successful in college"
+        },
+        {
+          "id": "GoalCommit10",
+          "text": "I need a college degree to achieve my goals"
+        },
+        {
+          "id": "GoalCommit11",
+          "text": "My friends and family think a college degree is important"
+        },
+        {
+          "id": "GoalCommit12",
+          "text": "Getting a college degree is one of my top priorities"
+        }
+      ]
+    },
+    {
+      "id": "help_seeking",
+      "title": "Help Seeking",
+      "questions": [
+        {
+          "id": "HelpSeek.1",
+          "text": "I feel that asking for help means that I lack ability"
+        },
+        {
+          "id": "HelpSeek.2",
+          "text": "I seek out help so I can better understand a problem"
+        },
+        {
+          "id": "HelpSeek.3",
+          "text": "When I have a problem, I try to solve it on my own instead of asking for help"
+        },
+        {
+          "id": "HelpSeek.4",
+          "text": "When I have trouble solving a problem on my own, I often give up rather than asking for help"
+        },
+        {
+          "id": "HelpSeek.5",
+          "text": "I feel like a failure when I need help solving a problem"
+        },
+        {
+          "id": "HelpSeek.6",
+          "text": "Getting help would be admitting that I just can’t solve problems on my own"
+        },
+        {
+          "id": "HelpSeek.7",
+          "text": "I am embarrassed when I have to ask for help"
+        },
+        {
+          "id": "HelpSeek.8",
+          "text": "When you have a problem, seeking out help is a good thing"
+        },
+        {
+          "id": "HelpSeek.9",
+          "text": "When I need help, I don’t care that others know"
+        }
+      ]
+    },
+    {
+      "id": "institutional_commitment",
+      "title": "Institutional Commitment",
+      "questions": [
+        {
+          "id": "InstCom.1",
+          "text": "This is one of the best schools in the nation"
+        },
+        {
+          "id": "InstCom.2",
+          "text": "I feel connected to this school"
+        },
+        {
+          "id": "InstCom.3",
+          "text": "I see myself as part of this school’s community"
+        },
+        {
+          "id": "InstCom.4",
+          "text": "I am happy to be at this school"
+        },
+        {
+          "id": "InstCom.5",
+          "text": "I feel a sense of belonging to this school"
+        }
+      ]
+    },
     {
       "id": "organization",
       "title": "Organization",
       "questions": [
         {
-          "id": "org_q1",
-          "text": "I keep track of assignment due dates.",
-          "factor": "organization"
+          "id": "Organize1",
+          "text": "I tend to follow a schedule"
         },
         {
-          "id": "org_q2",
-          "text": "I plan my time effectively.",
-          "factor": "organization"
+          "id": "Organize2",
+          "text": "I use a calendar to keep track of things"
+        },
+        {
+          "id": "Organize3",
+          "text": "I like to do things according to a plan"
+        },
+        {
+          "id": "Organize4",
+          "text": "I set aside specific times to study"
+        },
+        {
+          "id": "Organize5",
+          "text": "I make checklists"
+        },
+        {
+          "id": "Organize6",
+          "text": "I like to make a schedule for big assignments"
+        },
+        {
+          "id": "Organize7",
+          "text": "I have at least one place I like to study"
+        }
+      ]
+    },
+    {
+      "id": "persistence",
+      "title": "Persistence",
+      "questions": [
+        {
+          "id": "Persist1",
+          "text": "I like a challenge"
+        },
+        {
+          "id": "Persist2",
+          "text": "I finish what I start"
+        },
+        {
+          "id": "Persist3",
+          "text": "I don’t quit a task before it’s finished"
+        },
+        {
+          "id": "Persist4",
+          "text": "I don’t give up easily"
+        },
+        {
+          "id": "Persist5",
+          "text": "I work hard even when challenges get in my way"
+        },
+        {
+          "id": "Persist6",
+          "text": "I don’t let \"haters\" get in my way"
+        }
+      ]
+    },
+    {
+      "id": "quality_focus",
+      "title": "Quality Focus",
+      "questions": [
+        {
+          "id": "Quality1",
+          "text": "I pay attention to details"
+        },
+        {
+          "id": "Quality2",
+          "text": "I think before I act"
+        },
+        {
+          "id": "Quality3",
+          "text": "I choose my words carefully"
+        },
+        {
+          "id": "Quality4",
+          "text": "The quality of my work is important to me"
+        },
+        {
+          "id": "Quality5",
+          "text": "I work until something is done right"
+        },
+        {
+          "id": "Quality6",
+          "text": "I double check my work"
         }
       ]
     },
@@ -33,14 +479,78 @@
       "title": "Self-Efficacy",
       "questions": [
         {
-          "id": "se_q1",
-          "text": "I am confident I can learn the material in my courses.",
-          "factor": "self_efficacy"
+          "id": "SelfEff.1",
+          "text": "I am not sure where my life is going"
         },
         {
-          "id": "se_q2",
-          "text": "I believe I can succeed academically.",
-          "factor": "self_efficacy"
+          "id": "SelfEff.2",
+          "text": "I doubt my ability to succeed in college"
+        },
+        {
+          "id": "SelfEff.3",
+          "text": "I tend to see things through"
+        },
+        {
+          "id": "SelfEff.4",
+          "text": "I know how to get things done"
+        },
+        {
+          "id": "SelfEff.5",
+          "text": "I’m not sure if I’ll be able to finish my college degree"
+        },
+        {
+          "id": "SelfEff.6",
+          "text": "I know I can finish my college degree"
+        },
+        {
+          "id": "SelfEff.7",
+          "text": "I know I will do well in college"
+        },
+        {
+          "id": "SelfEff.8",
+          "text": "I feel comfortable with who I am"
+        }
+      ]
+    },
+    {
+      "id": "sense_of_belonging",
+      "title": "Sense of Belonging",
+      "questions": [
+        {
+          "id": "Belonging.1",
+          "text": "No one on campus would notice if one day I disappeared"
+        },
+        {
+          "id": "Belonging.2",
+          "text": "Sometimes I feel as if I was invisible to faculty and staff on campus"
+        },
+        {
+          "id": "Belonging.3",
+          "text": "I am not someone students would turn to when they need something"
+        },
+        {
+          "id": "Belonging.4",
+          "text": "There are lots of students at this school like me"
+        },
+        {
+          "id": "Belonging.5",
+          "text": "Faculty and staff will go out of their way to help me"
+        },
+        {
+          "id": "Belonging.6",
+          "text": "When I am on campus, no one recognizes me"
+        },
+        {
+          "id": "Belonging.7",
+          "text": "There are people at this school that take pride in my accomplishments"
+        },
+        {
+          "id": "Belonging.8",
+          "text": "Faculty and staff remember my name"
+        },
+        {
+          "id": "Belonging.9",
+          "text": "The faculty and staff here do not care what happens to me"
         }
       ]
     }
